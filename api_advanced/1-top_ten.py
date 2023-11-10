@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-1-main
+check out 1-main.py to run the code
 """
 import requests
 
