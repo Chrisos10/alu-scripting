@@ -13,11 +13,11 @@ def top_ten(subreddit):
         .format(subreddit)
 
     res = requests.get(
-    url,
-    headers={
-        'User-Agent': 'MyApp 0.1 (by j.dufitumuk@alustudent.com)'
-    }
-)
+            url,
+            headers={
+                'User-Agent': 'MyApp 0.1 (by j.dufitumuk@alustudent.com)'
+                }
+            )
 
     if res.status_code != 200:
         print(None)
