@@ -12,9 +12,12 @@ def top_ten(subreddit):
     url = "https://www.reddit.com/r/{}/hot.json?limit=10" \
         .format(subreddit)
 
-    res = requests.get(url,
-                       headers={
-                           'User-Agent': 'MyApp 0.1 (by j.dufitumuk@alustudent.com)'})
+    res = requests.get(
+    url,
+    headers={
+        'User-Agent': 'MyApp 0.1 (by j.dufitumuk@alustudent.com)'
+    }
+)
 
     if res.status_code != 200:
         print(None)
